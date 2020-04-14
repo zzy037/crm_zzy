@@ -12,7 +12,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import static org.junit.Assert.*;
 
 /**
- * @author 邹靓仔
+ * @author 邹靓仔+李朋骏
  * @date 2020/3/23 -18:53 -zzy_crm
  **/
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -62,7 +62,10 @@ public class PermissionMapperTest {
         System.out.println(permissionMapper.deleteById(2));
     }
 
-
+    @Test
+    public void lala(){
+        System.out.println("成功啦！沙雕");
+    }
 
 
 }
