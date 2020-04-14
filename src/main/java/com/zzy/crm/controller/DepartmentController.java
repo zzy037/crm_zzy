@@ -1,6 +1,9 @@
 package com.zzy.crm.controller;
 
 
+import com.zzy.crm.entity.Department;
+import com.zzy.crm.service.IDepartmentService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.RestController;
@@ -17,8 +20,18 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/department")
 public class DepartmentController {
 
+    @Autowired
+    private IDepartmentService iDepartmentService;
+
     @Override
     public boolean equals(Object obj) {
         return super.equals(obj);
+
     }
+    @RequestMapping
+    public boolean add(Department department){
+        return iDepartmentService.save(department);
+    }
+
+
 }
