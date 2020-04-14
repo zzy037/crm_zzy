@@ -17,4 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/department")
 public class DepartmentController {
 
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
 }
