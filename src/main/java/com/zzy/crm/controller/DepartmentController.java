@@ -23,11 +23,6 @@ public class DepartmentController {
     @Autowired
     private IDepartmentService iDepartmentService;
 
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
-
-    }
     @RequestMapping
     public boolean add(Department department){
         return iDepartmentService.save(department);
